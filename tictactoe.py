@@ -17,9 +17,12 @@ desk = [["-", "-", "-"], ["-", "-", "-"], ["-", "-", "-"]]
 #Funciones
 
 def printDesk ():
-    for i in range(0,2):
-        for j in range(0,2):
-            print(desk[i][j])
+    for i in range(0,3):
+        fila = ""
+        for j in range(0,3):
+            fila += desk[i][j]
+        print (fila)
+
 
 #Selección de símbolo
 while symSelect == False:
@@ -39,7 +42,7 @@ while symSelect == False:
         print("Error")
 
 #Inicio
-while lastTurn <= totTurn:
+while lastTurn < totTurn:
 
     control = False
 
